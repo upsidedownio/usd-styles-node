@@ -1,0 +1,10 @@
+{
+  "extends": "./vite.json",
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "noImplicitReturns": true
+  },
+  "exclude": ["node_modules"]
+}
