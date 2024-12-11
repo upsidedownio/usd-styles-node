@@ -8,9 +8,10 @@
     "rules": {
       "recommended": true,
       "style": {
-        "useImportType": "off",
-        "noUselessElse": "off",
+        "noInferrableTypes": "off",
         "noNonNullAssertion": "off",
+        "noUselessElse": "off",
+        "useImportType": "off",
         "useTemplate": "warn"
       },
       "complexity": {
