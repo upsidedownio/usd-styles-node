@@ -1,8 +1,7 @@
 {
+  "root": false,
   "$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
-  "organizeImports": {
-    "enabled": true
-  },
+  "assist": { "actions": { "source": { "organizeImports": "on" } } },
   "linter": {
     "enabled": true,
     "rules": {
@@ -10,8 +9,7 @@
       "style": {
         "useImportType": "off",
         "noUselessElse": "off",
-        "noNonNullAssertion": "off",
-        "useTemplate": "warn"
+	"noNonNullAssertion": "off"
       },
       "complexity": {
         "recommended": true
@@ -38,11 +36,6 @@
     }
   },
   "files": {
-    "ignore": [
-      ".turbo",
-      "package.json",
-      "node_modules",
-      "yarn.lock"
-    ]
+    "includes": ["**", "!**/.turbo", "!**/package.json", "!**/node_modules", "!**/yarn.lock"]
   }
 }
