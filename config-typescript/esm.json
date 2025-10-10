@@ -2,20 +2,27 @@
   "$schema": "https://json.schemastore.org/tsconfig",
   "display": "ESM Base",
   "compilerOptions": {
-    "lib": ["ESNext"],
-    "module": "ESNext",
-    "target": "ESNext",
-
     "strict": true,
-    "esModuleInterop": true,
-    "skipLibCheck": true,
-    "moduleResolution": "Node",
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
 
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
     "resolveJsonModule": true,
-    "allowSyntheticDefaultImports": true,
-    "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,
 
-    "forceConsistentCasingInFileNames": true
+    "noEmit": true,
+
+    "target": "ESNext",
+    "lib": ["ESNext"],
+
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+
+    "skipLibCheck": true,
+
+    "noUnusedLocals": false,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true
   }
 }

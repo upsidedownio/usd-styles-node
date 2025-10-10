@@ -9,7 +9,7 @@
       "style": {
         "useImportType": "off",
         "noUselessElse": "off",
-	"noNonNullAssertion": "off"
+        "noNonNullAssertion": "off"
       },
       "complexity": {
         "recommended": true
